@@ -1,0 +1,13 @@
+#! /bin/bash
+# SPDX-License-Identifier: Apache-2.0
+# Copyright (C) 2012-2022 OKTET Labs Ltd.
+#
+# Helper script to do semi-automatic TRC updates based on testing
+# results.
+#
+
+source "$(dirname "$(which "$0")")"/guess.sh
+
+. ${TE_BASE}/scripts/guess.sh
+te_trc_update_wrapper --def-conf-tester=./conf/tester.conf \
+    --def-db=trc/top.xml "$@"

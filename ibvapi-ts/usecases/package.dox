@@ -1,0 +1,14 @@
+/* SPDX-License-Identifier: Apache-2.0
+ * Copyright (C) 2012-2022 OKTET Labs Ltd.
+ */
+/**
+
+@defgroup usecases Reliability in Normal Use
+@ingroup ibvapi_tests
+@{
+
+@author Yurij M. Plotnikov <Yurij.Plotnikov@oktetlabs.ru>
+
+@} usecases
+
+*/

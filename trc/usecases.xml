@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+SPDX-License-Identifier: Apache-2.0
+Copyright (C) 2012-2022 OKTET Labs Ltd.
+-->
+<test name="usecases" type="package">
+  <objective>Main use cases of InfiniBand Verbs API</objective>
+  <notes/>
+  <iter result="PASSED">
+    <test name="post_send_post_recv" type="script">
+      <objective>DUMMY</objective>
+      <notes/>
+      <iter result="PASSED"/>
+    </test>
+  </iter>
+</test>

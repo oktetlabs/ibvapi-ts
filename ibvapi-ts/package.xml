@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!--
+SPDX-License-Identifier: Apache-2.0
+Copyright (C) 2012-2022 OKTET Labs Ltd.
+-->
+<package version="1.0">
+
+    <description>Infiniband Verbs API Test Suite</description>
+
+    <author mailto="Yurij.Plotnikov@oktetlabs.ru"/>
+
+    <session track_conf="silent">
+
+        <run>
+            <package name="usecases"/>
+        </run>
+
+    </session>
+
+</package>
