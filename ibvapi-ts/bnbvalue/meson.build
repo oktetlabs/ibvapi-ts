@@ -2,6 +2,7 @@
 # Copyright (C) 2012-2021 OKTET Labs Ltd.
 
 tests = [
+    'create_cq_bad_comp_vect',
     'incorrect_destroy_seq',
 ]
 

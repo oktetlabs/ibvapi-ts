@@ -29,5 +29,16 @@ Copyright (C) 2012-2022 OKTET Labs Ltd.
             </arg>
         </run>
 
+        <run>
+            <script name="create_cq_bad_comp_vect"/>
+            <arg name="env">
+                <value>{{{'pco_iut':IUT}}}</value>
+            </arg>
+            <arg name="num_cv">
+                <value>negative</value>
+                <value>big</value>
+            </arg>
+        </run>
+
     </session>
 </package>
