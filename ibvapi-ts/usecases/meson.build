@@ -5,6 +5,7 @@ tests = [
     'cq_context',
     'many_wrs',
     'post_send_post_recv',
+    'wc_fields',
 ]
 
 foreach test : tests
