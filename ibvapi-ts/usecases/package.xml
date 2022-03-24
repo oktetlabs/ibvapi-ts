@@ -12,6 +12,10 @@ Copyright (C) 2012-2022 OKTET Labs Ltd.
 
         <run>
             <script name="post_send_post_recv"/>
+            <arg name="env">
+                <value>{{{'pco_iut':IUT},addr:'mcast_addr':inet:multicast,addr:'iut_laddr':ether:unicast},{{'pco_tst':tester},addr:'tst_addr':inet:unicast,addr:'tst_laddr':ether:unicast}}</value>
+            </arg>
+            <arg name="local_write_access" type="boolean"/>
         </run>
 
     </session>

@@ -18,6 +18,7 @@ te_tests_info_sh = find_program(join_paths(te_path, 'te_tests_info.sh'))
 test_deps = [ dependency('threads') ]
 
 te_libs = [
+    'rpcc_ibv',
     'tapi_env',
     'tapi_rpc',
     'rpc_types',

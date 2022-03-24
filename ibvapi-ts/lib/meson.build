@@ -2,6 +2,7 @@
 # Copyright (C) 2012-2021 OKTET Labs Ltd.
 
 sources = [
+    'ibvapi-ts.c',
 ]
 
 ts_lib = static_library('ts_ibvapi', sources,
