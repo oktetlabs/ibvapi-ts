@@ -3,6 +3,7 @@
 
 tests = [
     'cq_context',
+    'many_wrs',
     'post_send_post_recv',
 ]
 
