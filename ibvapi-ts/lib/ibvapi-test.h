@@ -83,4 +83,7 @@
         OPEN_IBV_LIB(_rpcs, "/usr/lib64/librdmacm.so");  \
     } while (0)
 
+/** Nonexistent QP type */
+#define RPC_INCORRECT_QP_TYPE 30
+
 #endif /* !__TS_IBVAPI_TEST_H__ */

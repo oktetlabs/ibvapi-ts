@@ -40,5 +40,12 @@ Copyright (C) 2012-2022 OKTET Labs Ltd.
             </arg>
         </run>
 
+        <run>
+            <script name="bad_qp_type"/>
+            <arg name="env">
+                <value>{{{'pco_iut':IUT}}}</value>
+            </arg>
+        </run>
+
     </session>
 </package>
