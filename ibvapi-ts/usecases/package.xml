@@ -18,5 +18,46 @@ Copyright (C) 2012-2022 OKTET Labs Ltd.
             <arg name="local_write_access" type="boolean"/>
         </run>
 
+        <run>
+            <script name="cq_context"/>
+            <arg name="env">
+                <value>{{{'pco_iut':IUT},addr:'iut_mcast_addr':inet:multicast,addr:'iut_laddr':ether:unicast,addr:'iut_addr':inet:unicast},{{'pco_tst':tester},addr:'tst_addr':inet:unicast,addr:'tst_laddr':ether:unicast,addr:'tst_mcast_addr':inet:multicast}}</value>
+            </arg>
+            <arg name="two_cq">
+              <value>FALSE</value>
+            </arg>
+            <arg name="two_cc">
+              <value>FALSE</value>
+            </arg>
+            <arg name="two_notify_calls">
+              <value>FALSE</value>
+            </arg>
+            <arg name="two_contexts">
+              <value>FALSE</value>
+            </arg>
+            <arg name="comp_wr">
+              <value>send</value>
+              <value>recv</value>
+              <value>both</value>
+            </arg>
+        </run>
+        <run>
+            <script name="cq_context"/>
+            <arg name="env">
+                <value>{{{'pco_iut':IUT},addr:'iut_mcast_addr':inet:multicast,addr:'iut_laddr':ether:unicast,addr:'iut_addr':inet:unicast},{{'pco_tst':tester},addr:'tst_addr':inet:unicast,addr:'tst_laddr':ether:unicast,addr:'tst_mcast_addr':inet:multicast}}</value>
+            </arg>
+            <arg name="two_cq">
+              <value>TRUE</value>
+            </arg>
+            <arg name="two_cc" type="boolean"/>
+            <arg name="two_notify_calls" type="boolean"/>
+            <arg name="two_contexts" type="boolean"/>
+            <arg name="comp_wr">
+              <value>send</value>
+              <value>recv</value>
+              <value>both</value>
+            </arg>
+        </run>
+
     </session>
 </package>

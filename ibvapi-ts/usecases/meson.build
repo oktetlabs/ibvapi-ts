@@ -2,6 +2,7 @@
 # Copyright (C) 2012-2022 OKTET Labs Ltd.
 
 tests = [
+    'cq_context',
     'post_send_post_recv',
 ]
 
