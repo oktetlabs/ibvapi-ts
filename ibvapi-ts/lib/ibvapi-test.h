@@ -14,8 +14,26 @@
 #ifndef __TS_IBVAPI_TEST_H__
 #define __TS_IBVAPI_TEST_H__
 
+/* Common test variables */
+#ifndef TEST_START_VARS
+#define TEST_START_VARS TEST_START_ENV_VARS
+#endif
+
+/* The first action in any test - process environment */
+#define TEST_START_SPECIFIC TEST_START_ENV
+
+/* Perform environment-related cleanup at the end */
+#ifndef TEST_END_SPECIFIC
+#define TEST_END_SPECIFIC TEST_END_ENV
+#endif
+
 #include "te_config.h"
 
+#include "rcf_rpc.h"
+
+#include "tapi_env.h"
 #include "tapi_test.h"
+
+#include "tapi_rpc_signal.h"
 
 #endif /* !__TS_IBVAPI_TEST_H__ */

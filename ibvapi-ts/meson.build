@@ -49,7 +49,10 @@ test_deps += declare_dependency(include_directories: lib_dir,
 
 test_deps += [ dep_tirpc ]
 
-tests = [ ]
+tests = [
+    'epilogue',
+    'prologue',
+]
 
 package_dir = 'ibvapi-ts'
 package_tests_c = []

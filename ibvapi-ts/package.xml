@@ -11,6 +11,20 @@ Copyright (C) 2012-2022 OKTET Labs Ltd.
 
     <session track_conf="silent">
 
+        <var name="env.iut_only" global="true">
+            <value>{{{'pco_iut':IUT}}}</value>
+        </var>
+
+        <prologue>
+            <script name="prologue"/>
+            <arg name="env" ref="env.iut_only"/>
+        </prologue>
+
+        <epilogue>
+            <script name="epilogue"/>
+            <arg name="env" ref="env.iut_only"/>
+        </epilogue>
+
         <run>
             <package name="usecases"/>
         </run>
