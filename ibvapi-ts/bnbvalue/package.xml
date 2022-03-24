@@ -54,5 +54,23 @@ Copyright (C) 2012-2022 OKTET Labs Ltd.
             </arg>
         </run>
 
+        <run>
+            <script name="circle_wr"/>
+            <arg name="env">
+                <value>{{{'pco_iut':IUT}}}</value>
+            </arg>
+            <arg name="use_send_wr" type="boolean"/>
+            <arg name="circle_len">
+                <value>1</value>
+                <value>2</value>
+                <value>3</value>
+                <value>4</value>
+                <value>5</value>
+                <value>6</value>
+                <value>7</value>
+                <value>8</value>
+            </arg>
+        </run>
+
     </session>
 </package>

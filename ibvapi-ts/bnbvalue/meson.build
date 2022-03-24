@@ -4,6 +4,7 @@
 tests = [
     'bad_cq_pool_size',
     'bad_qp_type',
+    'circle_wr',
     'create_cq_bad_comp_vect',
     'incorrect_destroy_seq',
 ]
