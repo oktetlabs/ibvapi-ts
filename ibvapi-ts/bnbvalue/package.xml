@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!--
+SPDX-License-Identifier: Apache-2.0
+Copyright (C) 2012-2022 OKTET Labs Ltd.
+-->
+<package version="1.0">
+    <description>Bad and boundary values</description>
+
+    <author mailto="Yurij.Plotnikov@oktetlabs.ru"/>
+
+    <session track_conf="silent" track_conf_handdown="descendants">
+
+        <run>
+            <script name="incorrect_destroy_seq"/>
+            <arg name="env">
+                <value>{{{'pco_iut':IUT},addr:'mcast_addr':inet:multicast}}</value>
+            </arg>
+            <arg name="test_func" list="">
+                <value>dealloc_pd</value>
+                <value>destroy_comp_channel</value>
+                <value>destroy_cq</value>
+                <value>destroy_qp</value>
+            </arg>
+            <arg name="error" list="">
+                <value>EBUSY</value>
+                <value>0</value>
+                <value>EBUSY</value>
+                <value>EBUSY</value>
+            </arg>
+        </run>
+
+    </session>
+</package>

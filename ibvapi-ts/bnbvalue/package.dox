@@ -1,0 +1,24 @@
+/* SPDX-License-Identifier: Apache-2.0
+ * Copyright (C) 2012-2022 OKTET Labs Ltd.
+ */
+/**
+
+@defgroup bnbvalue Bad Parameters and Boundary Values
+@ingroup ibvapi_tests
+@{
+
+This package is intended to test InfiniBand Verbs API against careless
+usage, which includes passing incorrect value for parameters (too short or
+too long buffer, @c NULL pointers), inconsistent parameters, boundary
+values, calling functions in wrong order, etc.
+
+Each test does one of the following:
+    - check robustness of a particular function;
+    - check that the same situation correctly handled by a set of functions;
+    - check that one function influence on the behaviour of another
+
+@author Yurij M. Plotnikov <Yurij.Plotnikov@oktetlabs.ru>
+
+@} bnbvalue
+
+*/

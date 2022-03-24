@@ -29,6 +29,10 @@ Copyright (C) 2012-2022 OKTET Labs Ltd.
             <package name="usecases"/>
         </run>
 
+        <run>
+            <package name="bnbvalue"/>
+        </run>
+
     </session>
 
 </package>

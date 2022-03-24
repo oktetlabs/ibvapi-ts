@@ -41,6 +41,7 @@
 #include "tapi_test.h"
 
 #include "tapi_rpc_misc.h"
+#include "tapi_rpc_params.h"
 #include "tapi_rpc_rdma_cma.h"
 #include "tapi_rpc_signal.h"
 #include "tapi_rpc_socket.h"

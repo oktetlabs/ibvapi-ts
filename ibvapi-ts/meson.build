@@ -70,6 +70,7 @@ install_data([ 'package.xml', 'package.dox' ],
              install_dir: package_dir)
 
 packages = [
+    'bnbvalue',
     'usecases',
 ]
 
